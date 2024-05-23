@@ -15,11 +15,6 @@ numpy==1.26.4
 opencv-python==4.9.0.80
 opencv-python-headless==4.9.0.80
 pynput==1.7.7
-pyobjc-core==10.2
-pyobjc-framework-ApplicationServices==10.2
-pyobjc-framework-Cocoa==10.2
-pyobjc-framework-CoreText==10.2
-pyobjc-framework-Quartz==10.2
 python-engineio==4.9.1
 python-socketio==5.11.2
 simple-websocket==1.0.0
