@@ -1,0 +1,43 @@
+
+{#v.3#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Webcam and Mouse coords</title>
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <style>
+        #video-container {
+            position: relative;
+            text-align: center;
+            margin-top: 20px;
+        }
+        #video {
+            width: 640px; /* Adjust width as needed */
+            height: 480px; /* Adjust height as needed */
+            display: inline-block;
+        }
+        #coords {
+            position: absolute;
+            top: -30px; /* Adjust top position to move above the video frame */
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Webcam and Mouse coords</h1>
+    <div id="video-container">
+        <div id="coords">
+            <p>Mouse Coordinates: <span id="mouse_coords">(0, 0)</span></p>
+        </div>
+        <img src="{{ url_for('video_feed') }}" id="video" style="cursor: crosshair;" />
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
