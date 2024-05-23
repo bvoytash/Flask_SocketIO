@@ -18,6 +18,7 @@ Flask App which visualize the current reading of serial data from the movement o
 2. **Create and activate a virtual environment:**
 
     ```
+    sudo apt install python3-venv
     python3 -m venv venv
     source venv/bin/activate
     ```
@@ -31,7 +32,7 @@ Flask App which visualize the current reading of serial data from the movement o
 4. **Run the application:**
 
     ```
-    python main.py
+    python app.py
     ```
 
     The database will be created automatically if it does not already exist.
