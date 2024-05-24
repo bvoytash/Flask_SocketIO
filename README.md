@@ -11,13 +11,14 @@ Flask App which visualize the current reading of serial data from the movement o
 1. **Clone the repository:**
 
     ```
-    git clone git@github.com:bvoytash/Flask_SocketIO.git
+    git clone https://github.com/bvoytash/Flask_SocketIO.git
     cd Flask_SocketIO
     ```
 
 2. **Create and activate a virtual environment:**
 
     ```
+    sudo apt install build-essential python3-dev
     sudo apt install python3-venv
     python3 -m venv venv
     source venv/bin/activate
